@@ -13,8 +13,9 @@ public class MemberDto {
 	private String memberAddress1;
 	private String memberAddress2;
 	private String memberGrade;
-	private Date memberJoin;
 	private String memberEmail;
+	
+	
 	
 	public MemberDto() {
 		super();
@@ -73,17 +74,14 @@ public class MemberDto {
 	public void setMemberGrade(String memberGrade) {
 		this.memberGrade = memberGrade;
 	}
-	public Date getMemberJoin() {
-		return memberJoin;
-	}
-	public void setMemberJoin(Date memberJoin) {
-		this.memberJoin = memberJoin;
-	}
 	public String getMemberEmail() {
 		return memberEmail;
 	}
 	public void setMemberEmail(String memberEmail) {
 		this.memberEmail = memberEmail;
 	}
+	
+	
+	
 
 }

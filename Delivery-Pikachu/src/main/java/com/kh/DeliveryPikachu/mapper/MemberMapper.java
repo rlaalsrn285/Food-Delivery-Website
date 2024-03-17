@@ -23,8 +23,8 @@ public class MemberMapper implements RowMapper<MemberDto> {
 		memberDto.setMemberAddress1(rs.getString("member_address1"));
 		memberDto.setMemberAddress2(rs.getString("member_address2"));
 		memberDto.setMemberGrade(rs.getString("member_grade"));
-		memberDto.setMemberJoin(rs.getDate("member_join"));
 		memberDto.setMemberEmail(rs.getString("member_email"));
+		
 		return memberDto;
 	}
 }
