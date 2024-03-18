@@ -1,2 +1,2 @@
 # Food-Delivery-Website
-세미 연습용
+세미용
