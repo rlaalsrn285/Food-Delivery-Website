@@ -11,7 +11,7 @@
 	<groupId>com.khkh</groupId>
 	<artifactId>Delivery-Pikachu</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>Delivery-Pikachu</name>
 	<description>kh13-A Team Semi-Project</description>
 	<properties>
