@@ -20,6 +20,7 @@
 	<br>
 	<img class="storeImage" src="${storeDto.storeImgLink}">
 	<div>${storeDto.storeIntro}</div>
+	<a href="/store/myStore?storeNo="${storeDto.storeImgLink}></a>
 	
 	
 	</div>
