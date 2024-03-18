@@ -21,7 +21,15 @@ public class StoreDto {
     private String storeBusinessNumber;
     private int memberNo;
     
+    private String storeImgLink;
     
+    
+	public String getStoreImgLink() {
+		return storeImgLink;
+	}
+	public void setStoreImgLink(String storeImgLink) {
+		this.storeImgLink = storeImgLink;
+	}
 	public StoreDto() {
 		super();
 	}

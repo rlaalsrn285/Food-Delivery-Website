@@ -68,11 +68,7 @@
 						<th>등급</th>
 						<td class="left">${memberDto.memberGrade}</td>
 					</tr>
-					<tr>
-						<th>가입일시</th>
-						<td class="left"><fmt:formatDate
-								value="${memberDto.memberJoin}" pattern="y년 M월 d일 H시 m분 s초" /></td>
-					</tr>
+					
 				</table>
 			</div>
 
