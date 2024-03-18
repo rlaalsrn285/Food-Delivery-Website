@@ -15,6 +15,7 @@ public class StoreMapper implements RowMapper<StoreDto> {
     public StoreDto mapRow(ResultSet rs, int idx) throws SQLException {
         
     	StoreDto dto = new StoreDto();
+    	
         dto.setStoreNo(rs.getInt("store_no"));
         dto.setStoreName(rs.getString("store_name"));
         dto.setStorePost(rs.getString("store_post"));

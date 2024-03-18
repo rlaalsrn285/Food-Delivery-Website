@@ -33,6 +33,7 @@ public class StoreDto {
 	public StoreDto() {
 		super();
 	}
+	
 	public int getStoreNo() {
 		return storeNo;
 	}

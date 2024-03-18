@@ -41,7 +41,9 @@ public class StoreController {
 	@PostMapping("/insert")
 	public String insert(@ModelAttribute StoreDto storeDto, @RequestParam MultipartFile attach)
 			throws IllegalStateException, IOException {
-
+		int sequence = storeDao.getSequence();
+		storeDto.setStoreNo(sequence);
+		
 		storeDao.insert(storeDto);
 
 		if (!attach.isEmpty()) {
