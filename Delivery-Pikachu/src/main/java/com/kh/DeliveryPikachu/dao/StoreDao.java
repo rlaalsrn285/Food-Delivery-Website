@@ -55,6 +55,7 @@ public class StoreDao {
 		return list.isEmpty() ? null : list.get(0);
 	}
 
+	//attachNO찾기
 	public int findAttachNo(int storeNo) {
 
 		String sql = "select attach_no from store_attach9 where store_no = ?";

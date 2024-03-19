@@ -45,4 +45,12 @@ public class MenuDao {
 		return jdbcTemplate.query(sql, menuMapper);
 	}
 
+	// attachNO찾기
+	public int findAttachNo(int menuNo) {
+
+		String sql = "select attach_no from menu_attach9 where menu_no = ?";
+		Object[] data = { menuNo };
+		return jdbcTemplate.queryForObject(sql, int.class, data);
+	}
+
 }

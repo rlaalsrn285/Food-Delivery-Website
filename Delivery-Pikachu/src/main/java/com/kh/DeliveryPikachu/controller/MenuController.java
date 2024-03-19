@@ -15,8 +15,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.kh.DeliveryPikachu.dao.MenuDao;
 import com.kh.DeliveryPikachu.dto.MenuDto;
-import com.kh.DeliveryPikachu.dto.StoreDto;
 import com.kh.DeliveryPikachu.service.AttachService;
+import com.kh.DeliveryPikachu.service.ImageService;
 
 @Controller
 @RequestMapping("/menu")
@@ -27,6 +27,9 @@ public class MenuController {
 
 	@Autowired
 	MenuDao menuDao;
+	
+	@Autowired
+	ImageService imageService;
 
 	// 메뉴등록
 	@GetMapping("/insert")
@@ -59,9 +62,7 @@ public class MenuController {
 	// 모든메뉴리스트(임시임)
 	@RequestMapping("/listAll")
 	public String listAll(Model model) {
-
-		List<MenuDto> list;
-		list = menuDao.selectListAll();
+		List<MenuDto> list = imageService.menuImageSetUpList();
 		model.addAttribute("listAll", list);
 
 		return "/WEB-INF/views/menu/menuListAll.jsp";
