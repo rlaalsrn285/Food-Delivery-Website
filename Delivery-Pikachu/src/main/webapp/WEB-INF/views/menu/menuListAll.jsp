@@ -6,19 +6,25 @@
 <jsp:include page="/WEB-INF/views/template/header.jsp"></jsp:include>
 
 <style>
-.menu-btn {
-	align-self: flex-end;
+.containerStyle {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+}
+.menu-item img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
 }
 </style>
 
+<h1 class="cell center">메뉴리스트(전부) 테스트용</h1>
+<div class="container w-1200 containerStyle">
 
-<div class="container w-1200">
-	<h1 class="cell center">메뉴리스트(전부) 테스트용</h1>
 	<c:forEach var="menuDto" items="${listAll}">
 		<div class="cell">
 			<div class="flex-cell w-100">
 
-				<div class="cell">
+				<div class="cell menu-item">
 					<img src="${menuDto.menuImgLink}" width="70" height="70">
 				</div>
 				<div class="cell w-30">메뉴이름 : ${menuDto.menuName}</div>

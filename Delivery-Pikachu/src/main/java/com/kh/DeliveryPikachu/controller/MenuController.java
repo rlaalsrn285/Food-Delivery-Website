@@ -26,10 +26,10 @@ public class MenuController {
 	private AttachService attachService;
 
 	@Autowired
-	MenuDao menuDao;
+	private MenuDao menuDao;
 	
 	@Autowired
-	ImageService imageService;
+	private ImageService imageService;
 
 	// 메뉴등록
 	@GetMapping("/insert")
@@ -62,6 +62,7 @@ public class MenuController {
 	// 모든메뉴리스트(임시임)
 	@RequestMapping("/listAll")
 	public String listAll(Model model) {
+		
 		List<MenuDto> list = imageService.menuImageSetUpList();
 		model.addAttribute("listAll", list);
 

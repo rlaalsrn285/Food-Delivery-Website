@@ -43,6 +43,8 @@ public class ImageService {
 	// 메뉴리스트에 사진주소추가
 	public List<MenuDto> menuImageSetUpList() {
 		List<MenuDto> list = menuDao.selectListAll();
+		
+		
 
 		for (MenuDto dto : list) {
 			String menuImgLink = getMenuImgLink(dto.getMenuNo());

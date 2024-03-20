@@ -17,6 +17,7 @@ public class MenuDto {
 	public void setMenuImgLink(String menuImgLink) {
 		this.menuImgLink = menuImgLink;
 	}
+	
 	public MenuDto() {
 		super();
 	}
